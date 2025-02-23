@@ -10,6 +10,8 @@ import ConsultationsPage from "./components/consultations/ConsultationsPage";
 import TreatmentsPage from "./components/treatments/TreatmentsPage";
 import InvoicesPage from "./components/invoices/InvoicesPage";
 import PaymentsPage from "./components/payments/PaymentsPage";
+import SchedulesPage from "./components/schedules/SchedulesPage";
+import NotificationsPage from "./components/notifications/NotificationsPage";
 
 export default function App() {
   return (
@@ -24,6 +26,8 @@ export default function App() {
           <Route path="/treatments" element={<TreatmentsPage />} />
           <Route path="/invoices" element={<InvoicesPage />} />
           <Route path="/payments" element={<PaymentsPage />} />
+          <Route path="/schedules" element={<SchedulesPage />} />
+          <Route path="/notifications" element={<NotificationsPage />} />
         </Routes>
         {import.meta.env.VITE_TEMPO === "true" && useRoutes(routes)}
       </MainLayout>
